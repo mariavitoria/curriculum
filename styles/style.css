@@ -1,0 +1,101 @@
+@font-face {
+     font-family: "pixel";
+     src: url("Pixellari.ttf") format("truetype");
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	position: relative;
+	background-color: #141432;
+	margin:0 auto;
+	min-height: 100%;
+	width: 819px;
+}
+
+#initial{
+	height: 320px;
+	position: relative;
+}
+
+#corpo{
+	background-color: #4D4851;
+	background-image: url("../img/back3.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#london{
+	width: 158px;
+	height: auto;
+	margin-left: 74px;
+	margin-top: 140px;
+}
+
+#balao{
+	width: 485px;
+	position: absolute;
+	top: 118px;
+	left: 233px;	
+}
+
+#text{
+	width: 484px;
+	position: absolute;
+	top: 116px;
+	left: 275px;
+	max-width: 409px;
+	font-size: 1.1em;
+	color: black;
+	font-family: pixel;
+}
+
+.box{
+	margin: 15px 43px 0px 97px;
+	position: relative;
+	min-height: 268px;
+	
+}
+	.box h1{
+		font-weight: normal;
+		font-size: 1.7em;
+		color: black;
+		font-family: pixel;
+		margin: 0 0 0 160px;
+	}
+
+	.box img{
+		width: 122px;
+		height: auto;
+	}
+
+	.box p{
+		color: black;
+		font-family: pixel;
+		margin:0;
+		margin-top: 11px;
+		display: list-item; 
+		font-size: 1.1em;
+	}
+
+.descricao{
+	width: 415px;
+	position: absolute;
+	top: 37px;
+	left: 176px;
+
+}
+
+#formacao{
+	margin-bottom: 60px;
+	margin-top: 0px;
+}
+
+#pdf{
+	font-family: pixel;
+	text-align: center;
+	font-size: 1.1em;
+	margin: 0 0 30px 0;
+}

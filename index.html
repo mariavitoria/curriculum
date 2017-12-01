@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+</head>
+
+<body>
+	<div id="corpo">
+		<div id="initial">
+		<img id="london" src="./img/london.png">
+		<img id="balao" title="Designed by Freepik" src="./img/balao.png">
+		<p id="text"></p>
+		</div>
+		<script>
+			var x = "Olá! Meu nome é Maria Vitória, sou estudante de Engenharia de Computação e desenvolvedora Web, aqui você pode me conhecer um pouco melhor:";
+			var texto = [];
+			function imprime(id, frase){
+	    		var f;
+	    		f= function(i){
+	    		    document.getElementById(id).innerHTML+=frase[i];
+	       			if(i+1==frase.length)
+	          			return;
+	       			window.setTimeout(function(){f(i+1);},70);
+				}
+	    		f(0);			}
+			imprime ('text', x);
+		</script>	
+		<div class="box">	
+			<h1 >Informações pessoais:</h1>
+			<img src="./img/pessoal.png">
+			<div class="descricao">	
+				<p>Maria Vitória do Nascimento Inocencio, sou brasileira, solteira e tenho 19 anos;</p>
+				<p>Residente em São Carlos, e atualmente morando no alojamento da USP;</p>
+				<p>Você pode me contatar pelo email: maria.inocencio@usp.br ou pelo telefone: (16) 993991-2816.</p>
+			</div>
+		</div>
+		<div id="formacao" class="box">	
+			<h1>Formação:</h1>
+			<img src="./img/formacao.png">
+			<div class="descricao">	
+				<p>Em 2015 entrei na USP São Carlos, no curso de Matemática, e em 2017 transferi para a Engenharia de Computação.</p>
+				<p>Em 2014 me formei no curso técnico de Marketing, na ETEC Marthin Luther King, na cidade de São Paulo.</p>
+				<p>Em 2013 conclui o curso de Inglês Básico na Skill Idiomas e em 2014 conclui o de Inglês Intermediário na Opengate Idiomas, ambas na cidade de São Paulo.</p>
+			</div>
+		</div>
+		<div class="box">	
+			<h1>Experiencias passadas:</h1>
+			<img src="./img/exp.png">
+			<div class="descricao">	
+				<p>Entre março de 2016 e agosto de 2017 fui bolsista de um projeto de desenvolvimento de sites educativos no EIC/CDCC(USP), onde tive minha primeira experiencia com front-end.</p>
+				<p>Em setembro de 2017 iniciei meu segundo projeto em parceria com o NOMADS.usp onde participo como desenvolvedora de um site mobile.</p>
+			</div>
+		</div>
+		<p id="pdf">Para ver a versão em pdf clique <a href="curriculo.pdf">aqui</a></p>
+	</div>
+</body>
+</html>
